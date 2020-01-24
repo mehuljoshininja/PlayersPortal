@@ -1,0 +1,1 @@
+export const NAME_REGX = new RegExp(/[0-9@_!#$%^&*()<>?/\][|}{~:]/)
