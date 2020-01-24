@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { IoMdArrowRoundBack } from 'react-icons/io';
-
 import {
     Col, Card, Row, CardImg, CardBody,
     UncontrolledTooltip,

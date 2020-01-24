@@ -234,7 +234,6 @@ class AddPlayer extends React.Component {
                             <FormGroup row style={{ textAlign: 'left' }}>
                                 <Col>
                                     <Button type='submit' outline color='dark' size='md' disabled={(Object.values(this.state).includes('')) ? true : false}>Add</Button>
-                                    <Button outline color='dark' size='md' style={{ marginLeft: '10px' }}>&nbsp;&nbsp;Reset&nbsp;&nbsp;</Button>
                                 </Col>
                             </FormGroup>
                             <hr color='black' />
