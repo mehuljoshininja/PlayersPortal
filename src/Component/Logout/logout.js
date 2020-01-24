@@ -3,7 +3,8 @@ function logout(props) {
     localStorage.removeItem('token');
     localStorage.removeItem('role');
     localStorage.removeItem('profile');
-    window.location.reload(); 
+
+    window.location.reload();
     props.history.push('/login');
 }
 

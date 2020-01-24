@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Fade from 'react-fade-in';
 
 import Header from '../Admin/Header/header';
@@ -19,29 +19,29 @@ const ADMIN = 'admin';
 const USER = 'user';
 
 function App() {
-  return (
-	<div><Fade>
-		<Router>
-			<Header />
-			<Switch>
-				<Route exact path='/login' component={Login}/>
+	return (
+		<div><Fade>
+			<Router>
+				<Header />
+				<Switch>
+					<Route exact path='/login' component={Login} />
 
-				<CRout exact path='/logout' component={Logout} />
-				<Route exact path='/register-user' component={RegisterUser} />
-				
-				<CRout exact cprivate crole={[ADMIN]} path='/add-player' component={AddPlayer} />
-				<CRout exact cprivate crole={[ADMIN]} path='/dashboard'  component={Dashboard} />
-				
-				<CRout exact cprivate crole={[USER]} path='/user-dashboard' component={UserDashboard} />
-				<CRout exact cprivate crole={[ADMIN]} path='/view-player-details' component={ViewPlayerDetails} />
-				<CRout exact cprivate crole={[ADMIN]} path='/edit-player' component={EditPlayer} />
-				<CRout path='/unauthorized-access' component={UnAuthorizedAccess} />
-				<Route exact path='/' component={Login} />
-				<Route component={PageNotFound} />
-			</Switch>
-		</Router></Fade>
-	</div>
-  );
+					<CRout exact path='/logout' component={Logout} />
+					<Route exact path='/register-user' component={RegisterUser} />
+
+					<CRout exact cprivate crole={[ADMIN]} path='/add-player' component={AddPlayer} />
+					<CRout exact cprivate crole={[ADMIN]} path='/dashboard' component={Dashboard} />
+
+					<CRout exact cprivate crole={[USER]} path='/user-dashboard' component={UserDashboard} />
+					<CRout exact cprivate crole={[ADMIN]} path='/view-player-details' component={ViewPlayerDetails} />
+					<CRout exact cprivate crole={[ADMIN]} path='/edit-player' component={EditPlayer} />
+					<CRout path='/unauthorized-access' component={UnAuthorizedAccess} />
+					<Route exact path='/' component={Login} />
+					<Route component={PageNotFound} />
+				</Switch>
+			</Router></Fade>
+		</div>
+	);
 }
 
 export default App;

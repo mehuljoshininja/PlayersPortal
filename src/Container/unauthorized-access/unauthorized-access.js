@@ -1,7 +1,7 @@
 import React from 'react';
 
 function unauthorizedAccess() {
-    return(
+    return (
         <div>
             <h5>You Are Not Eligible To Access This Page...</h5>
         </div>
