@@ -26,7 +26,7 @@ export default function pagination({ playersPerPage, totalPlayer, currentPage, p
     return (
         <NavLink className='pagination'>
             {(currentPage === 1)
-                ? ''
+                ? null
                 :
                 <>
                     <NavItem className='page-item'>
@@ -48,7 +48,7 @@ export default function pagination({ playersPerPage, totalPlayer, currentPage, p
                 ))
             }
             {(currentPage === Math.ceil(totalPlayer / playersPerPage))
-                ? ''
+                ? null
                 :
                 <>
                     <NavItem className='page-item'>
